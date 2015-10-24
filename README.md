@@ -1,8 +1,11 @@
-# Picker View
+## Picker View
 
-Step 1. In XCode, select a UIPicker from the object library.  Drag it onto your storyboard.
+Here is a step-by-step guide for implementing UIPicker
+![uipicker](http://bencoffman.com/blog/content/binary/iOS%20Simulator.jpg)
 
-Step 2. Select the Picker, right click, and drag your mouse to the yellow view controller — the left most of the three icons at the top of the phone screen on your storyboard. 
+###Step 1.### In XCode, select a UIPicker from the object library.  Drag it onto your storyboard.
+
+###Step 2.### Select the Picker, right click, and drag your mouse to the yellow view controller — the left most of the three icons at the top of the phone screen on your storyboard. 
 
 Step 2a: In your ViewContoller file, add UIPickerViewDelegate after your UIViewController class declaration. `class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource`
 
