@@ -39,6 +39,7 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     }
 ```
 **Explanation:** Can you guess what each of these functions are doing?  Let's go through each one.
+
 + `func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {}`
 
 This function sets the number of components in your Picker.  In our SnapFacts App, there will be just one — the fact category.  How many would there be if you wanted your user to select a date?
