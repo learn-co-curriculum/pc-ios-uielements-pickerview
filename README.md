@@ -20,7 +20,7 @@ Here is a step-by-step guide for implementing UIPicker
 
 `pickerContent = ["Sports", "Geography", "Politics"]`
 
-**Step 4:** Beneath your `didReceiveMemoryWarning()' function, we are going to add four additional functions:
+**Step 4:** Beneath your `didReceiveMemoryWarning()` function, we are going to add four additional functions:
 
 ```swift
 func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -38,3 +38,20 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
         myLabel.text = factsDict[pickerData[row]]
     }
 ```
+**Explanation:** Can you guess what each of these functions are doing?  Let's go through each one.
++ `func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {}`
+
+This function sets the number of components in your Picker.  In our SnapFacts App, there will be just one — the fact category.  How many would there be if you wanted your user to select a date?
+
++`func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {}`
+    
+  This function specifies the number of rows in your picker.  In other words, how many categories you'll have.  If you wanted your user to select a month of the year, what value would this function return?
+  
++ `func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {`
+
+This function specifies the title of each row. In this case, it would be the actual names of your fact categories.  If you wanted you user to select a month, what would these values be?
+
++ `func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {}`
+
+This function determines what happens when a certain row is selected.  In the case of your Facts App, what do you want to display given the user's category selection?
+
