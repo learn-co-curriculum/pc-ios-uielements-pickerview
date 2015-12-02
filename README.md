@@ -56,3 +56,5 @@ This function specifies the title of each row. In this case, it would be the act
 
 This function determines what happens when a certain row is selected.  In the case of your Facts App, what do you want to display given the user's category selection?
 
+
+<a href='https://learn.co/lessons/pc-ios-uielements-pickerview' data-visibility='hidden'>View this lesson on Learn.co</a>
